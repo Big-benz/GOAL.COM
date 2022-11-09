@@ -149,4 +149,42 @@ vanishButton = () => {
 
 window.addEventListener("scroll", vanishButton);
 
+const videoContainer = document.querySelector(".video-container-main-video")
+const pauseBtn = document.querySelector(".pause-btn")
+console.log(pauseBtn)
+const playBtn = document.querySelector(".play-btn")
+const playAndPause = document.querySelector(".play-and-pause-icons")
+
+function playWithSound(){
+    videoContainer.muted = !videoContainer.muted
+}
+
+window.addEventListener("DOMContentLoaded", function(){
+    videoContainer.pause()
+    playWithSound()
+})
+
+playBtn.addEventListener("click", function(){
+    videoContainer.play()
+    pauseBtn.style.display = "block"
+    playBtn.style.display = "none"
+})
+
+pauseBtn.addEventListener("click", function(){
+    videoContainer.pause()
+    playBtn.style.display = "block"
+    pauseBtn.style.display = "none"
+})
+
+videoContainer.addEventListener("mouseenter", function(){
+    playAndPause.style.display = "block"
+})
+videoContainer.addEventListener("mouseleave", function(){
+    playAndPause.style.display = "none"
+})
+
+playAndPause.addEventListener("mouseenter", function(){
+    playAndPause.style.display = "block"
+})
+
 
