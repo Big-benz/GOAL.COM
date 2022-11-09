@@ -18,6 +18,8 @@
     z-index: 44;
 }
 
+
+
 .list-items .nav-bar ul {
     display: flex;
     position: absolute;
@@ -757,10 +759,22 @@ img{
     column-gap: .6rem;
     grid-template-columns:repeat(3, 1fr);
 }
+
 .videos-container{
-    padding-top: 16rem;
-    transform: translate(-50% -50%);
+    padding-top:20rem;
+}
+.video-wrapper{
+    width: 50rem;
+}
+.video-container-main-video{
+    display: flex;
+    align-items: left;
+    justify-content: left;
     gap: 1rem;
+    width: 56rem;
+    height: 31rem;
+    
+
     
 }
 .video-banner{
@@ -773,11 +787,26 @@ img{
     font-weight: 200;
 }
 
+.play-and-pause-icons{
+    position: relative;
+    top: -17rem;
+    left: 22rem;
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    color: white;
+}
+.play-btn{
+    cursor: pointer;
+}
+.pause-btn{
+    display: none;
+}
 
 .video-container-1{
     margin: 0 -30rem;
     width: 133%;
-    height: 108vh;
+    height: 107vh;
 }
 .video-story{
     position: absolute;
@@ -796,8 +825,12 @@ img{
     margin-right: -30rem;
 
 }
+.article-text-container{
+    position: relative;
+    top: 1rem;
+}
 .article-text .button{
-    padding: 5px 5px;
+    padding: 2px 2px;
 }
 
 .video-article-icons.article-icons{
@@ -819,7 +852,7 @@ img{
 .video-stories-continued{
     padding-bottom: -2rem;
     margin-top: -0.1rem;
-    padding-bottom: -5rem;
+    padding-bottom: -2rem;
 }
 .real-madrid,.Roma,.haaland,.exclusive{
     font-size: 18px;
